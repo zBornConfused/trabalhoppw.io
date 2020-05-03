@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+	<title>Meus Jogos</title>
+	<style type="text/css">
+		body{
+			background-repeat: no-repeat;
+			background-position: top right;
+			margin: 0px;
+		}
+		#topo {
+			background-color: #808080;
+			color: black;
+			height: 80px;
+			font-size: 2em;
+			padding: 20px;
+			text-align: center;
+			line-height: 80px;
+			font-weight: bold;
+		}
+		#esquerda {
+			width: 300px;
+			height: 540px;
+			background-color: #454745;
+			font-size: 30px;
+			text-align: center;
+			font-family: Arial;
+			color: white;
+			line-height: 80px;
+			float: left;
+		}
+		#branco {
+			height: 10px;
+			background-color: white;
+		}
+		#centro {
+			height: 540px;
+			background-color: #9b9e9b;
+			line-height: 60px;
+		}
+		#direita {
+			width: 500px;
+			height: 540px;
+			background-color: #9b9e9b;
+			line-height: 60px;
+			float: right;
+		}
+		#rodape {
+			height: 70px;
+			background-color: #353835;
+		}
+		#tab{	
+			position: relative;
+    			top: 50px;
+    			left: 50px;
+			
+		}
+		#divd {
+			height: 60px;
+			width: 200px;
+			font-size: 20px;
+			line-height: 60px;
+			color: white;
+			border: solid 1px;
+			position: relative;
+    			top: 20px;
+    			left: 50px;
+		}
+		#cad {
+			position: relative;
+    			left: 100px;
+		}
+		#cad2 {
+			position: relative;
+    			left: 120px;
+		}
+		#cad3 {
+			position: relative;
+    			left: 140px;
+		}
+		label{
+			width: 100px;
+			text-align: left;
+			display: inline-block;
+			font-weight: 600;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="topo">
+		Cadastro
+	</div>
+
+	<div id="branco">
+
+	</div>
+
+	<div id="esquerda">
+		Links para os jogos
+		<div id="divd"><A HREF="jogo1.html">League of Legends</A></div>
+		<div id="divd"><A HREF="jogo2.html">World of Warcraft</A></div>
+		<div id="divd"><A HREF="jogo3.html">Dark Souls III</A></div>
+	</div>
+
+	<div id="direita">
+		<form>
+			<label for="endereco">Endereço: </label>
+			<input type="text" name="endereco">
+			<br>
+			<label for="numero">Número: </label>
+			<input type="number" name="numero">
+			<br>
+			<label for="estado">Estado: </label>
+			<select id"estado" name="estado">
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Epirito Santo</option>
+				<option value="GO">Goias</option>
+				<option value="MA">Maranhao</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PR">Paraiba</option>
+				<option value="PN">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</select>
+			<br>
+			<label for="login">Login: </label>
+			<input type="text" name="login">
+			<br>
+			<label for="senha">Senha: </label>
+			<input type="password" name="senha">
+		</form>	
+	</div>
+
+
+	<div id="centro">
+		<form>
+			<label for="nome" id="cad">Nome: </label>
+			<input type="text" name="nome" id="cad">
+			<br>
+			<label for="sobrenome" id="cad">Sobrenome: </label>
+			<input type="text" name="sobrenome" id="cad">
+			<br>
+			<label for="data" id="cad">Nascimento: </label>
+			<input type="date" name="data" id="cad">
+			<br>
+			<label id="cad">Sexo:</label>
+			<input type="radio" name="sexo" value="masculino" id="cad2"><label id="cad2">Masculino</label>
+			<input type="radio" name="sexo" value="feminino" id="cad3"><label id="cad3">Feminino</label>
+			<br>
+			<label for="email" id="cad">Email: </label>
+			<input type="text" name="email" id="cad" placeholder="seuemail@email.com">
+			<br>
+			<label for="telefone" id="cad">Telefone: </label>
+			<input type="number" name="telefone" id="cad" placeholder="(xx) xxxxx-xxxx">
+		</form>	
+	</div>
+
+	<div id="branco">
+
+	</div>
+
+	<div id="rodape">
+		
+	</div>
+
+</body>
+</html>
