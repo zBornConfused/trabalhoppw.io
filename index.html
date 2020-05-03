@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>MEUS JOGOS</title>
-	</head>
-	<body>
-		<h1>MEUS JOGOS</h1>
-		<ul>
-			<li><A HREF="jogo1.html">League of Legends</A></li>
-			<li><A HREF="jogo2.html">World of Warcraft</A></li>
-			<li><A HREF="jogo3.html">Dark Souls III</A></li>
-		</ul>
-		<table border="1">
+<head>
+	<title>Meus Jogos</title>
+	<style type="text/css">
+		body{
+			background-repeat: no-repeat;
+			background-position: top right;
+			margin: 0px;
+		}
+		#topo {
+			background-color: #808080;
+			color: black;
+			height: 80px;
+			font-size: 2em;
+			padding: 20px;
+			text-align: center;
+			line-height: 80px;
+			font-weight: bold;
+		}
+		#esquerda {
+			width: 300px;
+			height: 540px;
+			background-color: #454745;
+			font-size: 30px;
+			text-align: center;
+			font-family: Arial;
+			color: white;
+			line-height: 80px;
+			float: left;
+		}
+		#branco {
+			height: 10px;
+			background-color: white;
+		}
+		#centro {
+			height: 540px;
+			background-color: #9b9e9b;
+			line-height: 50px;
+			text-align: center;
+		}
+		#rodape {
+			height: 70px;
+			background-color: #353835;
+		}
+		#tab{	
+			position: relative;
+    			top: 50px;
+    			left: 50px;
+			
+		}
+		#divd {
+			height: 60px;
+			width: 200px;
+			font-size: 20px;
+			line-height: 60px;
+			color: white;
+			border: solid 1px;
+			position: relative;
+    			top: 20px;
+    			left: 50px;
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<div id="topo">
+		Meus Jogos
+	</div>
+
+	<div id="branco">
+
+	</div>
+
+	<div id="esquerda">
+		Links para os jogos
+		<div id="divd"><A HREF="jogo1.html">League of Legends</A></div>
+		<div id="divd"><A HREF="jogo2.html">World of Warcraft</A></div>
+		<div id="divd"><A HREF="jogo3.html">Dark Souls III</A></div>
+	</div>
+	<div id="centro">
+	
+
+		<table border="1" id="tab">
 				<tfoot>
 				<tr><td colspan="8">Valores consultados em 22/03/2020</td></tr>
 				</tfoot>
@@ -23,7 +95,7 @@
 				<th colspan="3">Plataformas</th>
 				<th>Preço</th>
 			</tr>
-			<tr>
+			<tr bgcolor="white">
 				<td>League of Legends</td>
 				<td>27/10/2009</td>
 				<td>MOBA</td>
@@ -43,7 +115,7 @@
 				<td>macOS</td>
 				<td>$7,90/mês</td>
 			</tr>
-			<tr>
+			<tr bgcolor="white">
 				<td>Dark Souls III</td>
 				<td>24/03/2016</td>
 				<td>RPG</td>
@@ -55,6 +127,17 @@
 			</tr>
 		</tbody>
 		</table>
-	</body>
 
+
+	</div>
+
+	<div id="branco">
+
+	</div>
+
+	<div id="rodape">
+
+	</div>
+
+</body>
 </html>
