@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<head>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Meus Jogos</title>
+
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,9 +41,20 @@
 
 	</style>
 
+<script type="text/javascript">
+  function dimOpac() { 
+      document.getElementById("id1").style.opacity = "0.5";
+  } 
+
+  function aumOpac() { 
+      document.getElementById("id1").style.opacity = "1.0";
+  } 
+  </script>
+
 </head>
 <body>
 	
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MJ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +63,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -61,12 +74,12 @@
           Jogos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="Jogo1.html">League of Legends</a>
-          <a class="dropdown-item" href="Jogo2.html">World of Warcraft</a>
-          <a class="dropdown-item" href="Jogo3.html">Dark Souls 3</a>
-      </li>
+          <a class="dropdown-item" href="jogo1.html">League of Legends</a>
+          <a class="dropdown-item" href="jogo2.html">World of Warcraft</a>
+          <a class="dropdown-item" href="jogo3.html">Dark Souls 3</a>
+      </div></li>
       <li class="nav-item">
-        <a class="nav-link" href="cadastre.html">Cadastre-se</a>
+        <a class="nav-link" href="Cadastre.html">Cadastre-se</a>
       </li>
     </ul>
   </div>
@@ -78,19 +91,57 @@
       <div class="col-sm">
         <h1>World of Warcraft</h1>
         <br>
-		<p>World of Warcraft (também conhecido pelo acrônimo WoW) é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004. O jogo se passa no mundo fantástico de Azeroth, introduzido no primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.</p>
-		<p>É considerado o mais popular MMORPG de todo o mundo, tendo chegado a ter 11 milhões de jogadores ativos no ano de 2010.[2][1] Em 2016, contava com 5 milhões de jogadores regulares.</p>
-		<p>Joga-se com um programa cliente ligado a uma rede de servidores. Existem servidores para atender Estados Unidos, Oceania, Europa, Rússia, China, Coreia do Sul, Taiwan, Sudeste Asiático, Brasil e América Latina. O acesso aos servidores requer uma chave original e é pago mensalmente, mediante assinatura com dinheiro real ou com ouro conquistado dentro do jogo[4]. A partir de julho de 2011, o jogo também passou a ser distribuído sem custos por meio da versão Starter Edition, que permite ao jogador ir até o nível 20 de personagem dentro do jogo.</p>
-		<h4>Site oficial</h4>
-		<ul>
-			<li><A HREF="https://us.shop.battle.net/pt-br/product/world-of-warcraft-subscription?blzcmp=wow_subscribe_ragnaros">Comprar</A></li>
-		</ul>
-		<h3>Imagens</h3>
-		<img src="img/imag.jpg" alt="descrição imagem" width="854" height="480">
-		<img src="img/imag2.jpg" alt="descrição imagem" width="854" height="480">
-		<img src="img/imag3.jpg" alt="descrição imagem" width="854" height="480">
-		<div id="voltarTopo">
-			<a href="#" id="subir">Topo</a>
-		</div>
-	</body>
-</html>
+        <p>World of Warcraft (também conhecido pelo acrônimo WoW) é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004. O jogo se passa no mundo fantástico de Azeroth, introduzido no primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.</p>
+        <p>É considerado o mais popular MMORPG de todo o mundo, tendo chegado a ter 11 milhões de jogadores ativos no ano de 2010.[2][1] Em 2016, contava com 5 milhões de jogadores regulares.</p>
+        <p>Joga-se com um programa cliente ligado a uma rede de servidores. Existem servidores para atender Estados Unidos, Oceania, Europa, Rússia, China, Coreia do Sul, Taiwan, Sudeste Asiático, Brasil e América Latina. O acesso aos servidores requer uma chave original e é pago mensalmente, mediante assinatura com dinheiro real ou com ouro conquistado dentro do jogo[4]. A partir de julho de 2011, o jogo também passou a ser distribuído sem custos por meio da versão Starter Edition, que permite ao jogador ir até o nível 20 de personagem dentro do jogo.</p>     </div>
+      <div class="col-sm">
+          <h1>Imagens</h1>
+          <br>
+        <img src="img/imag.jpg" class="d-block w-50" alt="0">
+        <p></p>
+        <img src="img/imag2.jpg" class="d-block w-50" alt="0">
+        <p></p>
+        <img src="img/imag3.jpg" class="d-block w-50" alt="0">
+        <p></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+          <h1>Onde baixar:</h1>
+          <br>
+        <a href="https://us.shop.battle.net/pt-br/product/world-of-warcraft-subscription?blzcmp=wow_subscribe_ragnaros" target="_blank"><img src="img/Logos/download.jpg" alt="0" onmouseover="dimOpac()" onmouseout="aumOpac()" id="id1" class="d-block mx-auto gb-3" width="200" height="200"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-4">
+            <a href="FaleConosco.html"><h3>Fale Conosco</h3></a>
+        </div>
+        <div class="col-sm-4">
+            <h3>Conecte</h3>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <div class="col-sm-4">
+            <h3>Contato</h3>
+            <h3>0800-000-000</h3>
+        </div>
+    </div>
+</footer>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+</body></html>
