@@ -58,6 +58,25 @@
 
   }
 
+  function validaEmail(email){
+    if(email.value == "" || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 )
+  	{
+        alert( "Endereço de email inválido!" );
+  	}
+  }
+
+  function cadastro(num) {
+
+    var er = /[^0-9.]/;
+    er.lastIndex = 0;
+    var campo = num;
+     if (er.test(campo.value)) {
+      campo.value = "";
+      }
+    var value1 = campo.value;
+    var resultado = value1.replace(/^(\d{2})(\d{5})(\d{3}).*/,"($1) $2-$3");
+    campo.value = resultado;
+}
 
 </script>
 
@@ -109,12 +128,12 @@
               <input type="text" class="form-control" id="example2" placeholder="dd/mm/aaaa">
             </div>
             <div class="form-group">
-                <label for="example3">Telefone:</label>
-                <input type="number" class="form-control" id="example3" placeholder="(XX)XXXXX-XXXXX">
+                <label for="num1">Telefone:</label>
+                <input type="text" class="form-control" id="num1" onchange="return cadastro(this)" maxlength="14" placeholder="(XX) XXXXX-XXXX">
             </div>
             <div class="form-group">
                 <label for="example4">Endereço:</label>
-                <input type="text" class="form-control" id="example4" placeholder="(XX)XXXXX-XXXXX">
+                <input type="text" class="form-control" id="example4">
             </div>
             <div class="form-group">
                 <label for="example5">Número:</label>
@@ -142,7 +161,7 @@
           <br><br>
           <div class="form-group">
             <label for="exampleInputEmail1">Email:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" onchange="validaEmail(this)" aria-describedby="emailHelp" placeholder="nome@email.com">
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
